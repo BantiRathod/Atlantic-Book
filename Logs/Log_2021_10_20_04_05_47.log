@@ -1,0 +1,14 @@
+2021-10-20 17:05:05,226  INFO [main] AtlanticBooks:46 - landing at home page
+2021-10-20 17:05:08,288  INFO [main] AtlanticBooks:51 - clicked on sign button
+2021-10-20 17:05:09,243  INFO [main] AtlanticBooks:68 - username entered
+2021-10-20 17:05:09,498  INFO [main] AtlanticBooks:70 - password entered
+2021-10-20 17:05:12,430  INFO [main] AtlanticBooks:72 - clicked on summit button
+2021-10-20 17:05:13,226  INFO [main] AtlanticBooks:68 - username entered
+2021-10-20 17:05:13,379  INFO [main] AtlanticBooks:70 - password entered
+2021-10-20 17:05:13,541  INFO [main] AtlanticBooks:72 - clicked on summit button
+2021-10-20 17:05:13,875  INFO [main] AtlanticBooks:68 - username entered
+2021-10-20 17:05:14,001  INFO [main] AtlanticBooks:70 - password entered
+2021-10-20 17:05:14,087  INFO [main] AtlanticBooks:72 - clicked on summit button
+2021-10-20 17:05:24,434  INFO [main] AtlanticBooks:87 - enterd product name
+2021-10-20 17:05:30,385  INFO [main] AtlanticBooks:104 - selected serach product
+2021-10-20 17:05:41,061  INFO [main] AtlanticBooks:124 - prodeuct added into card successfully
