@@ -5,8 +5,12 @@
     <classes>
       <class name="com.mindtree.runner.AtlanticBooks">
         <methods>
+          <include name="addToCardTesting"/>
+          <include name="selectProductTesting"/>
+          <include name="searchProductTesting"/>
+          <include name="shopingCardTesting"/>
           <include name="closeDriver"/>
-          <include name="signInTesting" invocation-numbers="0 1"/>
+          <include name="signInTesting" invocation-numbers="1"/>
         </methods>
       </class> <!-- com.mindtree.runner.AtlanticBooks -->
     </classes>

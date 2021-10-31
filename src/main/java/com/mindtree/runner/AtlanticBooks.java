@@ -33,6 +33,7 @@ public class AtlanticBooks {
 	WebDriver driver = null;
 	ReadPropertyFile rp = null;
 
+	
 	/*
 	 * this method is responsible for landing at home page and click on sign button.
 	 * 
@@ -67,6 +68,8 @@ public class AtlanticBooks {
 	
 	}
 	
+	
+	
 	/*
 	 * this method is responsible for sending username and password to login form.
 	 * 
@@ -93,19 +96,23 @@ public class AtlanticBooks {
 		sp.getSignInSmmitButton().click();
 		log.info("clicked on summit button");
 		
+		Thread.sleep(5000L);
 		SearchBoxPage sbp = new SearchBoxPage(driver);
 		  
 		  //IN ORDER TO VERIFY THAT WE HAVE SUCCESSFULLY SIGN IN OR NOT
-		  if(sbp.getSignOut().getText().equalsIgnoreCase("sign out")) {
+		  if(sbp.getMyAccount().getText().equalsIgnoreCase("My Account")) {
 		  Assert.assertTrue(true);
 		  log.info("SIGNED IN SUCCESSFULLY");
 		  }
 		  else{ 
 			  Assert.assertTrue(false); 
 			  log.info("Wrong Credantials Found");
-		  }
-			
+		  }	
 	}
+	
+	
+	
+	
 
 	/*
 	 * this method is responsible for sending product name has to be searched.
@@ -145,6 +152,8 @@ public class AtlanticBooks {
 	}
 	
 	
+	
+	
 	/*
 	 * this method is responsible for selecting a product after searching it.
 	 * 
@@ -179,7 +188,7 @@ public class AtlanticBooks {
 		  Assert.assertTrue(false); 
 		  }
 		
-	}
+	 }
 	
 	
 	
@@ -204,11 +213,18 @@ public class AtlanticBooks {
 		Assert.assertTrue(atc.getTitleAfterAdding().getText().contains("You added"));
 
 		log.info("prodeuct added into card successfully");
-
 	}
 	
 	
-	@Test(priority = 6)
+	
+	/*
+	 * This method is responsible for adding product into card  after selecting  it.
+	 * 
+	 * and cross verify it by title that product added or not.
+	 * 
+	 * AddToCardPage contains method to return webElement of select product page.
+	 */
+    @Test(priority = 6)
 	public void shopingCardTesting()
 	{
 		AddToCardPage atc = new AddToCardPage(driver);
@@ -219,7 +235,7 @@ public class AtlanticBooks {
 		atc.getViewCart().click();
 		
 		Assert.assertTrue(scp.getSummuryTitle().getText().equalsIgnoreCase("Summary"));
-	}
+	 }
 
 	@AfterTest
 	public void closeDriver() {

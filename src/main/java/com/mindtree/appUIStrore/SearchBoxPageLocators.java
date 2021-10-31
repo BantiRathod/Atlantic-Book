@@ -6,6 +6,6 @@ public class SearchBoxPageLocators {
 
 	public static By searchBox = By.id("searchbox");
 	
-	public static By  singOut = By.xpath("//a[text()='Sign Out']");
+	public static By  myAcc = By.xpath("//a[text()='My Account']");
 	
 }

@@ -19,8 +19,8 @@ public class SearchBoxPage {
 	    	   return driver.findElement(SearchBoxPageLocators.searchBox);
 	       }
 	      
-	       public WebElement getSignOut()
+	       public WebElement getMyAccount()
 	       {
-	    	   return driver.findElement(SearchBoxPageLocators.singOut);
+	    	   return driver.findElement(SearchBoxPageLocators.myAcc);
 	       }
 }
